@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alien Abduction Order Form</title>
+    <link href="css/forms.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <h1>Alien Abduction Order Form</h1>
+        <p>
+          Fill out the form below to place an order for an alien abduction by
+          one of our fine UFOs.
+        </p>
+        <form action="" method="get">
+          <fieldset>
+            <legend>Your contact information</legend>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" />
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" />
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </fieldset>
+          <fieldset>
+            <legend>About your abduction</legend>
+            <label for="requestedDate">Requested date</label>
+            <input type="date" id="requestedDate" />
+            <label for="myqty">How many people would you like abducted?</label>
+            <input type="number" id="myqty" min="1" max="10" />
+            <p>What type of UFO do you prefer?</p>
+            <div>
+              <label
+                ><input
+                  type="radio"
+                  id="classic"
+                  name="ufoType"
+                  value="classic"
+                  checked
+                />Classic oval UFO</label
+              >
+
+              <label
+                ><input
+                  type="radio"
+                  id="starWars"
+                  name="ufoType"
+                  value="starWars"
+                />Star Wars-style Imperial cruiser</label
+              >
+
+              <label
+                ><input
+                  type="radio"
+                  id="battleStar"
+                  name="ufoType"
+                  value="battleStar"
+                />Battlestar Galactica-style Viper</label
+              >
+
+              <label for="Borg"
+                ><input
+                  type="radio"
+                  id="Borg"
+                  name="ufoType"
+                  value="Borg"
+                />Borg-style cube</label
+              >
+            </div>
+            <p for="abduction-experience">
+              What type of abduction experience do you want?
+            </p>
+            <select name="experience" id="abduction-experience">
+              <option value="">--Please choose an option--</option>
+              <option value="solar system">Tour of the solar system</option>
+              <option value="alien dinner">Alien dinner and discussion</option>
+              <option value="dance lesson">Alien dance lessons</option>
+              <option value="Whale">Whale watching</option>
+            </select>
+            <p for="request">Special requests:</p>
+
+            <textarea id="request" name="request" rows="5" cols="33">
+            </textarea>
+
+            <label
+              ><input type="checkbox" id="subscribe" name="subscribe" />Add me
+              to your email list</label
+            >
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <aside>
+        <h3>Our Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25216.754086704303!2d144.94564131767535!3d-37.811261054157704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642caf37771c5%3A0x834e664d24dced61!2sCBD%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1600763087697!5m2!1sen!2sau"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <address>
+          Frontend Masters &middot; 60 South 6th Street &middot; Suite 3625
+          &middot; Minneapolis, MN 55402
+        </address>
+      </aside>
+    </div>
+  </body>
+</html>
